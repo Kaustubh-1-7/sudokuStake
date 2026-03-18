@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build
+out/
+cache/
+artifacts/
+typechain-types/
+.next/
+dist/
+
+# Foundry
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+contracts/lib/
+
+# Rust
+rust/risk-engine/target/
+rust/pvm-contract/target/
+rust/pvm-contract/contract.polkavm
+
+# Environment
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+coverage/
+lcov.info
+
+# Internal docs / plans
+DEPLOYMENT.md
+polkadot-hackathon-plan.md
+workplan.md
+docs/LendDot_Demo_Guide.docx
+docs/LendDot_Architecture_Presentation.pptx
