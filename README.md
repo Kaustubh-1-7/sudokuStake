@@ -117,12 +117,6 @@ $$
 \forall g \in Groups,\quad \sum_{i \in g} (1 \ll board[i]) = 1022
 $$
 
-### ⚡ Why this works
-
-* Eliminates nested loops
-* Detects duplicates instantly
-* Uses constant-time bit operations
-
 ➡️ Complexity improves from **O(n²)** → **O(n)**
 
 ---
@@ -140,7 +134,7 @@ $$
 
 * Next.js 16 (App Router)
 * React 18
-* Tailwind CSS (Zinc theme)
+* Tailwind CSS
 
 ### Web3
 
@@ -154,31 +148,32 @@ $$
 
 ```
 SudoStake/
-├── contracts/                 
-│   ├── SudoStake.sol                  
-├── rust/                      
+├── assets/
+│   ├── dashboard.png
+│   ├── easy.png
+│   ├── idle.png
+│   └── hard.png
+├── contracts/
+│   ├── SudoStake.sol
+├── rust/
 │   └── pvm-contract/
-│       ├── src/main.rs                  
-└── frontend/                  
+│       ├── src/main.rs
+└── frontend/
     ├── app/
     ├── components/
-    │   └── GameBoard.jsx      
+    │   └── GameBoard.jsx
     └── utils/
-        └── contract.js        
+        └── contract.js
 ```
 
 ---
 
 ## 🚀 Installation
 
-### 1. Clone Repository
-
 ```bash
 git clone https://github.com/Kaustubh-1-7/sudokuStake.git
 cd SudoStake
 ```
-
-### 2. Frontend Setup
 
 ```bash
 cd frontend
@@ -186,64 +181,50 @@ npm install
 npm run dev
 ```
 
-### 3. PVM Engine
-
 ```bash
 cd rust/pvm-contract
 rustup override set nightly
-rustup component add rust-src --toolchain nightly
 cargo install polkatool --version 0.26.0
 make
 ```
 
 ---
 
-## 🎮 Usage
-
-1. Connect wallet (MetaMask / Polkadot Hub)
-2. Select game mode (Free / Stake)
-3. Solve the Sudoku grid
-4. Submit solution on-chain
-5. Earn rewards 🎉
-
----
-
 ## 📸 Screenshots
 
-### 🏠 Dashboard / Home
-
+### 🏠 Dashboard
 Displays total wins, wallet connection status, and game modes (Easy / Hard / Refresh)
-![Dashboard](image.png)
+
+![Dashboard](assets/dashboard.png)
 
 ### ⏸️ Idle State
-
 Board before starting a game
-![Idle Board](image-2.png)
 
-### 🎮 Game Board (Easy Mode)
+![Idle Board](assets/idle.png)
 
+### 🎮 Easy Mode
 Interactive Sudoku grid with more hints for easier solving
-![Easy Board](image-1.png)
 
+![Easy Board](assets/easy.png)
 
 ### 🔥 Hard Mode
-
 Challenging Sudoku board with fewer hints
-![Hard Board](image-3.png)
+
+![Hard Board](assets/hard.png)
 
 ---
 
-> 💡 Tip: Reload the app if you face any network or UI issues.
+> 💡 Tip: Reload the app if any network/UI issue occurs.
 
 ---
 
 ## 🤝 Contributing
 
-* Fork the repository
-* Create a branch (`feature/new-feature`)
+* Fork the repo
+* Create branch
 * Commit changes
-* Push to GitHub
-* Open Pull Request
+* Push
+* Open PR 🚀
 
 ---
 
